@@ -1,0 +1,30 @@
+{
+  "name": "less4_byguides",
+  "version": "1.0.0",
+  "description": "Собираем среду по официальным guides",
+  "scripts": {
+    "build": "webpack --mode development",
+    "start": "webpack --mode development --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evgan/less4_byGuides.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Evgan/less4_byGuides/issues"
+  },
+  "homepage": "https://github.com/Evgan/less4_byGuides#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "css-loader": "^2.1.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2"
+  }
+}
