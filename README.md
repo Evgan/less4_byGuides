@@ -17,7 +17,13 @@ Minimal example но с небольшими изменениями
 
 2 BABEL
 ===============================================================================
-https://babeljs.io/setup#installation
+по https://babeljs.io/setup#installation
+1)npm install --save-dev babel-cli
+2) babel.config.js:
+
+
+
+
 
 
 
