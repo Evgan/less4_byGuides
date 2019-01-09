@@ -38,12 +38,36 @@ npm i babel-preset-es2015 -D
 babel src/js --out-file dist/es5min.js --minified или же указать "minified": true в package.json
 Так же в package.json можно указать файлы которые бабел будет игнорировать
 
+из package.json:
+"babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ],
+    "minified": true,
+    "ignore": "testIgnoreBabel.js"
+  },
 
 Babel для React:
 npm i babel-preset-react -D
 + добавляем в presets "react" и теперь транспилтор будет обрабатывать jsx файлы
 
+3 BABEL + Webpack
+===============================================================================
+Очень доходчиво расписано что к чему в webpack:
+https://golos.io/vox-populi/@vp-webdev/ispolxzovanie-webpack-i-babel-v-javascript
+Но по этой инструкции не заработало
 
+Следующий вариант (Заработал):
+https://medium.com/@jeffrey.allen.lewis/the-ultimate-2018-webpack-4-and-babel-setup-guide-npm-yarn-dependencies-compared-entry-points-866b577da6a
+Установим:
+    Webpack:
+npm install webpack webpack-cli webpack-dev-server --save-dev
+    Babel:
+npm install @babel/cli @babel/core @babel/node @babel/preset-env @babel/preset-react @babel/register --save-dev
+    JS/JSX & CSS Loaders:
+npm install babel-loader style-loader css-loader
+P.S. Что бы обрабатывались и js и jsx файлы необходимо их оба указать в вебпаке: "test: /\.(js|jsx)$/"
 
 
 
